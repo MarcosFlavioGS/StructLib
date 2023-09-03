@@ -1,0 +1,1 @@
+/usr/sbin/c++ -rdynamic "CMakeFiles/\$(PROJECT_NAME).dir/main.cpp.o" -o $(PROJECT_NAME) 

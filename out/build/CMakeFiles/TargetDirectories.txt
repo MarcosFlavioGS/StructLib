@@ -1,0 +1,4 @@
+/home/mflavio/workspace/C++/projects/structlib/out/build/CMakeFiles/StructLib_lib.dir
+/home/mflavio/workspace/C++/projects/structlib/out/build/CMakeFiles/StructLib.dir
+/home/mflavio/workspace/C++/projects/structlib/out/build/CMakeFiles/edit_cache.dir
+/home/mflavio/workspace/C++/projects/structlib/out/build/CMakeFiles/rebuild_cache.dir

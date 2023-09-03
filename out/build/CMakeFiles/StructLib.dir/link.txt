@@ -1,0 +1,1 @@
+/usr/sbin/c++ -rdynamic CMakeFiles/StructLib.dir/main.cpp.o -o StructLib  lib/libStructLib_lib.a 
