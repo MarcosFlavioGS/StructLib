@@ -7,15 +7,17 @@
  * Implementation for the Binary Search Tree interface.
 */
 template <typename T>
-class STree {
+class Tree {
 public:
 		T data;
-		STree *left;
-		STree *right;
+		Tree *left;
+		Tree *right;
 
-		STree(void);
-		STree(T data);
-		void insert(T data);
+		Tree(void);
+		Tree(T val);
+		void insert(T val);
+		void insert_right(T val);
+		void insert_left(T val);
 		void tprint();
 		void print();
 };

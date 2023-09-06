@@ -1,33 +1,49 @@
 #include "../includes/structlib.hpp"
 
 using namespace std;
-template class STree<int>;
+
+template class Tree<int>;
+template class Tree<long>;
+template class Tree<long long>;
+template class Tree<float>;
+template class Tree<std::string>;
+template class Tree<char>;
 
 template <typename T>
-STree<T>::STree(void) {
+Tree<T>::Tree(void) {
 	data = T();
 	left = nullptr;
 	right = nullptr;
 }
 
 template <typename T>
-STree<T>::STree(T val) {
+Tree<T>::Tree(T val) {
 	data = val;
 	left = nullptr;
 	right = nullptr;
 }
 
 template <typename T>
-void STree<T>::insert(T val) {
+void Tree<T>::insert_right(T val) {
+	right = new Tree(val);
+}
+
+template <typename T>
+void Tree<T>::insert_left(T val) {
+	left = new Tree(val);
+}
+
+template <typename T>
+void Tree<T>::insert(T val) {
 	if (val < data) {
 		if (left == nullptr) {
-			left = new STree(val);
+			left = new Tree(val);
 		} else {
 			left->insert(val);
 		}
 	} else {
 		if (right == nullptr) {
-			right = new STree(val);
+			right = new Tree(val);
 		} else {
 			right->insert(val);
 		}
@@ -35,7 +51,7 @@ void STree<T>::insert(T val) {
 }
 
 template <typename T>
-void STree<T>::tprint() {
+void Tree<T>::tprint() {
 	if (left != nullptr) {
 		left->tprint();
 	}
@@ -46,6 +62,6 @@ void STree<T>::tprint() {
 }
 
 template <typename T>
-void STree<T>::print() {
+void Tree<T>::print() {
 	cout << data;
 }
