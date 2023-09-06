@@ -1,19 +1,31 @@
 #pragma one
 
 #include <iostream>
+#include <string>
 
 /*
  * Implementation for the Binary Search Tree interface.
 */
+template <typename T>
 class STree {
 public:
-		int data;
+		T data;
 		STree *left;
 		STree *right;
 
 		STree(void);
-		STree(int data);
-		void insert(int data);
+		STree(T data);
+		void insert(T data);
 		void tprint();
 		void print();
+};
+
+template <typename T>
+class List {
+public:
+		T data;
+		List *next;
+
+		List(void);
+		List(T data);
 };

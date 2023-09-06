@@ -166,6 +166,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/StructLib.dir/build.make CMakeFiles/StructLib.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/list.o: src/list.cpp.o
+.PHONY : src/list.o
+
+# target to build an object file
+src/list.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StructLib_lib.dir/build.make CMakeFiles/StructLib_lib.dir/src/list.cpp.o
+.PHONY : src/list.cpp.o
+
+src/list.i: src/list.cpp.i
+.PHONY : src/list.i
+
+# target to preprocess a source file
+src/list.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StructLib_lib.dir/build.make CMakeFiles/StructLib_lib.dir/src/list.cpp.i
+.PHONY : src/list.cpp.i
+
+src/list.s: src/list.cpp.s
+.PHONY : src/list.s
+
+# target to generate assembly for a file
+src/list.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StructLib_lib.dir/build.make CMakeFiles/StructLib_lib.dir/src/list.cpp.s
+.PHONY : src/list.cpp.s
+
 src/tree.o: src/tree.cpp.o
 .PHONY : src/tree.o
 
@@ -203,6 +227,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/list.o"
+	@echo "... src/list.i"
+	@echo "... src/list.s"
 	@echo "... src/tree.o"
 	@echo "... src/tree.i"
 	@echo "... src/tree.s"

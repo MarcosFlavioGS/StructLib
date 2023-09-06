@@ -1,20 +1,24 @@
 #include "../includes/structlib.hpp"
 
 using namespace std;
+template class STree<int>;
 
-STree::STree(void) {
-	data = 0;
+template <typename T>
+STree<T>::STree(void) {
+	data = T();
 	left = nullptr;
 	right = nullptr;
 }
 
-STree::STree(int val) {
+template <typename T>
+STree<T>::STree(T val) {
 	data = val;
 	left = nullptr;
 	right = nullptr;
 }
 
-void STree::insert(int val) {
+template <typename T>
+void STree<T>::insert(T val) {
 	if (val < data) {
 		if (left == nullptr) {
 			left = new STree(val);
@@ -30,7 +34,8 @@ void STree::insert(int val) {
 	}
 }
 
-void STree::tprint() {
+template <typename T>
+void STree<T>::tprint() {
 	if (left != nullptr) {
 		left->tprint();
 	}
@@ -40,6 +45,7 @@ void STree::tprint() {
 	}
 }
 
-void STree::print() {
+template <typename T>
+void STree<T>::print() {
 	cout << data;
 }

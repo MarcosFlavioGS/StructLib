@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/mflavio/workspace/C++/projects/structlib/src/list.cpp" "CMakeFiles/StructLib_lib.dir/src/list.cpp.o" "gcc" "CMakeFiles/StructLib_lib.dir/src/list.cpp.o.d"
   "/home/mflavio/workspace/C++/projects/structlib/src/tree.cpp" "CMakeFiles/StructLib_lib.dir/src/tree.cpp.o" "gcc" "CMakeFiles/StructLib_lib.dir/src/tree.cpp.o.d"
   )
 

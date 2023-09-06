@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 2.27.4)
 project(StructLib)
 
 # Define the sources for your library
-set(LIB_SOURCES src/tree.cpp)
+set(LIB_SOURCES src/tree.cpp src/list.cpp)
 
 # Create a static library from your sources
 add_library(${PROJECT_NAME}_lib STATIC ${LIB_SOURCES})

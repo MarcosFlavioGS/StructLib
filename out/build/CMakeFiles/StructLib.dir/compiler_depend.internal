@@ -3,7 +3,7 @@
 
 CMakeFiles/StructLib.dir/main.cpp.o
  /home/mflavio/workspace/C++/projects/structlib/main.cpp
- /home/mflavio/workspace/C++/projects/structlib/structlib.hpp
+ /home/mflavio/workspace/C++/projects/structlib/includes/structlib.hpp
  /usr/include/alloca.h
  /usr/include/asm-generic/errno-base.h
  /usr/include/asm-generic/errno.h

@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/StructLib_lib.dir/src/list.cpp.o"
+  "CMakeFiles/StructLib_lib.dir/src/list.cpp.o.d"
   "CMakeFiles/StructLib_lib.dir/src/tree.cpp.o"
   "CMakeFiles/StructLib_lib.dir/src/tree.cpp.o.d"
   "lib/libStructLib_lib.a"
